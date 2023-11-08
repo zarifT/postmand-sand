@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "d0e5b3e8-f77b-401f-b848-2356aaadaeeb",
+		"name": "preprod",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserName\" : \"Supervisor\",\r\n    \"UserPassword\": \"Qwerty123!@#Asd12345678\",\r\n    \"TimeZoneOffset\": -360\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crm1.hcsbk.kz/ServiceModel/AuthService.svc/Login",
+					"protocol": "https",
+					"host": [
+						"crm1",
+						"hcsbk",
+						"kz"
+					],
+					"path": [
+						"ServiceModel",
+						"AuthService.svc",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
