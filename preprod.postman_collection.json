@@ -9,10 +9,16 @@
 			"name": "New Request",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "BPMCSRF",
+						"value": "9IqzDzur6eeAgQdHem12oO",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"UserName\" : \"Supervisor\",\r\n    \"UserPassword\": \"Qwerty123!@#Asd12345678\",\r\n    \"TimeZoneOffset\": -360\r\n}",
+					"raw": "{\r\n    \"IIN\" : \"780402401080\",\r\n    \"NAME\" : \"САЛТАНАТ\",\r\n    \"FAM\": \"АППАЗОВА\",\r\n    \"OTCH\": \"ОСПАНОВНА\",\r\n    \"MobilePhone\": \"+77078589322\",\r\n    \"CaseTarget\": \"167\",\r\n    \"CaseOrigin\": \"\",\r\n    \"Region\": 1426,\r\n    \"MailIIN\": \"940529300081\",\r\n    \"SntColvirDepCode\": 0,\r\n    \"DopInfo\": null\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -20,17 +26,18 @@
 					}
 				},
 				"url": {
-					"raw": "https://crm1.hcsbk.kz/ServiceModel/AuthService.svc/Login",
+					"raw": "https://bpm.terrasoft.test/0/rest/ServiceCallV3/SendZvonokV3",
 					"protocol": "https",
 					"host": [
-						"crm1",
-						"hcsbk",
-						"kz"
+						"bpm",
+						"terrasoft",
+						"test"
 					],
 					"path": [
-						"ServiceModel",
-						"AuthService.svc",
-						"Login"
+						"0",
+						"rest",
+						"ServiceCallV3",
+						"SendZvonokV3"
 					]
 				}
 			},
